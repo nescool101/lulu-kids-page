@@ -1,0 +1,6 @@
+{
+  "name": "lulu-kids-page",
+  "private": true,
+  "type": "module",
+  "dependencies": { "nodemailer": "^6.9.16" }
+}

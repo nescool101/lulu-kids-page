@@ -20,6 +20,8 @@
   nav { text-align:right } nav button { font:inherit; border:0; border-radius:999px; padding:6px 14px; background:var(--yellow); color:#2b2540; cursor:pointer }
   [data-l] { display:none } html[lang=es] [data-l=es], html[lang=en] [data-l=en] { display:revert }
   a { color:inherit }
+  form textarea, form input { display:block; width:100%; margin:8px 0; padding:10px; font:inherit; border-radius:12px; border:2px solid var(--blue); background:var(--bg); color:var(--ink) }
+  form button { border:0; cursor:pointer; font:inherit }
 </style>
 </head>
 <body>
@@ -68,6 +70,19 @@
   <a class="btn" href="#" id="donate"><span data-l="es">Donar</span><span data-l="en">Donate</span></a>
 </div>
 
+<h2 data-l="es">Sugerencias</h2><h2 data-l="en">Suggestions</h2>
+<div class="card">
+  <p data-l="es">¿Qué juego te gustaría ver? ¿Algo que mejorar? Cuéntanos.</p>
+  <p data-l="en">Which game would you like to see? Anything to improve? Tell us.</p>
+  <form id="sug">
+    <textarea name="msg" required minlength="5" maxlength="2000" rows="4" aria-label="Message"></textarea>
+    <input name="from" maxlength="200" type="text" placeholder="Email (optional)" aria-label="Email">
+    <input name="website" tabindex="-1" autocomplete="off" style="display:none">
+    <button class="btn" type="submit"><span data-l="es">Enviar</span><span data-l="en">Send</span></button>
+    <span id="sugmsg" role="status"></span>
+  </form>
+</div>
+
 <h2 id="privacy" data-l="es">Privacidad</h2><h2 id="privacy-en" data-l="en">Privacy</h2>
 <div class="card">
   <p data-l="es">Lulu Kids no recopila datos personales. Todo se queda en tu dispositivo.</p>
@@ -78,6 +93,16 @@
 <script>
   function L(l){ document.documentElement.lang=l; try{localStorage.l=l}catch(e){} }
   try { L(localStorage.l || (navigator.language.startsWith('en') ? 'en' : 'es')) } catch(e) {}
+  sug.onsubmit = async e => {
+    e.preventDefault();
+    const es = document.documentElement.lang == 'es';
+    sugmsg.textContent = '…';
+    try {
+      const r = await fetch('/api/suggest', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(sug))) });
+      if (!r.ok) throw 0;
+      sug.reset(); sugmsg.textContent = es ? '¡Gracias! 💌' : 'Thank you! 💌';
+    } catch { sugmsg.textContent = es ? 'No se pudo enviar, intenta de nuevo.' : 'Could not send, please try again.'; }
+  };
 </script>
 </body>
 </html>
