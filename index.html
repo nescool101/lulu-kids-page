@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lulu Kids</title>
+<meta name="description" content="Juegos educativos tranquilos y sin anuncios para niños de 2 a 4 años. Calm, ad-free learning games for ages 2–4.">
+<style>
+  :root { --ink:#2b2540; --bg:#fff8ec; --card:#fff; --pink:#ffd1dc; --blue:#bde7ff; --green:#c8f7c5; --yellow:#fff3b0; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#f4efff; --bg:#1d1930; --card:#2a2545; } }
+  * { box-sizing:border-box }
+  body { margin:0; font:18px/1.5 system-ui,sans-serif; color:var(--ink); background:var(--bg) }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px }
+  h1 { font-size:3rem; margin:.2em 0 }
+  h2 { margin-top:2em }
+  .card { background:var(--card); border-radius:24px; padding:20px 24px; margin:16px 0 }
+  .btn { display:inline-block; padding:12px 24px; border-radius:999px; background:var(--pink); color:#2b2540; font-weight:700; text-decoration:none; margin:4px 8px 4px 0 }
+  .btn.alt { background:var(--blue) } .btn.dim { opacity:.5; pointer-events:none }
+  .tiles { font-size:2.2rem; letter-spacing:.3em }
+  nav { text-align:right } nav button { font:inherit; border:0; border-radius:999px; padding:6px 14px; background:var(--yellow); color:#2b2540; cursor:pointer }
+  [data-l] { display:none } html[lang=es] [data-l=es], html[lang=en] [data-l=en] { display:revert }
+  a { color:inherit }
+</style>
+</head>
+<body>
+<main>
+<nav><button onclick="L(document.documentElement.lang=='es'?'en':'es')">ES / EN</button></nav>
+
+<header>
+  <h1>🌈 Lulu Kids</h1>
+  <p data-l="es"><b>Juegos educativos tranquilos y sin anuncios</b> para niños de 2 a 4 años. Español e inglés, funciona sin internet y no recopilamos datos.</p>
+  <p data-l="en"><b>Calm, ad-free learning games</b> for children aged 2–4. Spanish and English, works offline, and we collect no data.</p>
+  <a class="btn" href="#" id="play">Google Play</a>
+  <a class="btn alt dim" href="#">App Store · <span data-l="es">pronto</span><span data-l="en">soon</span></a>
+</header>
+
+<h2 data-l="es">Aprender jugando</h2><h2 data-l="en">Learn by playing</h2>
+<div class="card">
+  <p data-l="es">Juegos cortos y con voz, sin cronómetros, sin puntajes y sin pantallas de "incorrecto". Una marca suave muestra la respuesta y el niño lo intenta otra vez.</p>
+  <p data-l="en">Short, voiced games with no timers, no scores and no "wrong" screens. A gentle mark shows the answer and the child tries again.</p>
+  <p class="tiles" aria-hidden="true">🎨 🔢 🔤 🧩 🧠 🃏 🦁 📖 🖍️ 🎮</p>
+  <p data-l="es">Colores y formas · Números · Letras · Rompecabezas · Lógica · Memoria · Animales · Cuentos sobre emociones · Pintar · Minijuegos. Dos niveles: 2 años y 4 años.</p>
+  <p data-l="en">Colors &amp; shapes · Numbers · Letters · Puzzles · Logic · Memory · Animals · Stories about feelings · Paint · Minigames. Two levels: age 2 and age 4.</p>
+</div>
+
+<h2 data-l="es">Gratis y versión completa</h2><h2 data-l="en">Free and Full</h2>
+<div class="card">
+  <p data-l="es"><b>Gratis:</b> muchos juegos en cada categoría. Nunca anuncios.<br><b>Versión completa, US$1 una sola vez:</b> más animales, más rompecabezas y más minijuegos. Sin suscripción. Se paga dentro de la app con Google Pay / Apple Pay.</p>
+  <p data-l="en"><b>Free:</b> lots of games in every category. Never any ads.<br><b>Full version, $1 once:</b> more animals, more puzzles and more minigames. No subscription. Paid inside the app with Google Pay / Apple Pay.</p>
+</div>
+
+<h2 data-l="es">Para padres</h2><h2 data-l="en">For parents</h2>
+<div class="card">
+  <p data-l="es">Sin anuncios, sin analítica de terceros, sin cuentas. Las compras y los enlaces externos están detrás de una verificación para adultos. Hecho por un papá para sus dos hijos, probado primero por ellos.</p>
+  <p data-l="en">No ads, no third-party analytics, no accounts. Purchases and external links sit behind a parent check. Made by a dad for his two boys, tested by them first.</p>
+</div>
+
+<h2 data-l="es">Apoya a Lulu Kids ❤️</h2><h2 data-l="en">Support Lulu Kids ❤️</h2>
+<div class="card">
+  <p data-l="es">Lulu Kids lo hace una sola persona. Si tu familia lo disfruta, una donación ayuda a pagar nuevos juegos, voces e ilustraciones.</p>
+  <p data-l="en">Lulu Kids is built by one person. If your family enjoys it, a donation helps pay for new games, voices and illustrations.</p>
+  <a class="btn" href="#" id="donate"><span data-l="es">Donar</span><span data-l="en">Donate</span></a>
+</div>
+
+<h2 id="privacy" data-l="es">Privacidad</h2><h2 id="privacy-en" data-l="en">Privacy</h2>
+<div class="card">
+  <p data-l="es">Lulu Kids no recopila datos personales. Todo se queda en tu dispositivo.</p>
+  <p data-l="en">Lulu Kids collects no personal data. Everything stays on your device.</p>
+  <!-- TODO contact email -->
+  <p>Contact: <a href="mailto:">TODO</a></p>
+</div>
+</main>
+<script>
+  function L(l){ document.documentElement.lang=l; try{localStorage.l=l}catch(e){} }
+  try { L(localStorage.l || (navigator.language.startsWith('en') ? 'en' : 'es')) } catch(e) {}
+</script>
+</body>
+</html>
