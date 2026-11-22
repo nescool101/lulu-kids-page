@@ -56,7 +56,7 @@
 </head>
 <body>
 <main>
-<nav aria-label="Language"><button aria-label="Español / English" onclick="L(document.documentElement.lang=='es'?'en':'es')">ES / EN</button></nav>
+<nav aria-label="Language"><a href="/blog/" style="float:left;font-weight:700"><span data-l="es">Guías</span><span data-l="en">Guides</span></a><button aria-label="Español / English" onclick="L(document.documentElement.lang=='es'?'en':'es')">ES / EN</button></nav>
 
 <header>
   <h1><span aria-hidden="true">🌈</span> Lulu Kids</h1>
@@ -93,6 +93,12 @@
   <p data-l="en">Only family-certified, non-personalized ads; no third-party analytics, no accounts. The Info screen, purchases and external links sit behind a parent check. Made by a dad for his two boys, tested by them first.</p>
 </div>
 
+<h2 data-l="es">Guías para padres</h2><h2 data-l="en">Parent guides</h2>
+<div class="card">
+  <p data-l="es">Artículos útiles: <a href="/blog/juegos-educativos-por-edad.html">cómo elegir juegos educativos según la edad</a> y <a href="/blog/tiempo-de-pantalla-rutina.html">una rutina tranquila de tiempo de pantalla</a>. <a href="/blog/">Ver todas las guías</a>.</p>
+  <p data-l="en">Useful reads: <a href="/blog/juegos-educativos-por-edad.html">how to choose educational games by age</a> and <a href="/blog/tiempo-de-pantalla-rutina.html">a calm screen-time routine</a>. <a href="/blog/">See all guides</a>.</p>
+</div>
+
 <h2 data-l="es">Apoya a Lulu Kids ❤️</h2><h2 data-l="en">Support Lulu Kids ❤️</h2>
 <div class="card">
   <p data-l="es">Lulu Kids lo hace una sola persona. Si tu familia lo disfruta, una donación ayuda a pagar nuevos juegos, voces e ilustraciones.</p>
@@ -120,6 +126,7 @@
   <p data-l="en">Lulu Kids collects no personal data. Everything stays on your device.</p>
   <p>Contact: <a href="https://t.me/nescool101" rel="noopener">Telegram</a> · <a href="https://www.linkedin.com/in/nfalvarezg" rel="noopener">LinkedIn</a></p>
 </div>
+<footer style="margin-top:3rem;font-size:.9rem"><a href="/blog/"><span data-l="es">Guías</span><span data-l="en">Guides</span></a> · <a href="/privacy.html"><span data-l="es">Privacidad</span><span data-l="en">Privacy</span></a></footer>
 </main>
 <script>
   function L(l){ document.documentElement.lang=l; try{localStorage.l=l}catch(e){} }
