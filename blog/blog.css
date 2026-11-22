@@ -17,3 +17,8 @@ footer a { margin-right:12px }
 .langsw { font:inherit; border-radius:999px; padding:6px 14px; background:var(--yellow); color:#2b2540; text-decoration:none }
 .crumbs { font-size:.85rem; opacity:.75; margin:.8rem 0 0 }
 .faq h3 { font-size:1.05rem; margin:1.1em 0 .2em }
+html { -webkit-text-size-adjust:100%; overflow-x:hidden } img, table, pre { max-width:100% }
+main { overflow-wrap:anywhere }
+.top a, footer a, .crumbs a, .langsw, .top button { display:inline-flex; align-items:center; min-height:44px }
+.card h2 a { display:inline-block; padding:4px 0 }
+@media (max-width:600px) { body { font-size:16px } h1 { font-size:1.7rem } main { padding:16px 16px 48px } footer a { margin-right:16px } }
