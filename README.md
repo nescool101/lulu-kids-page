@@ -4,7 +4,9 @@ Static site on Vercel (`index.html`, `privacy.html`, `blog/`, `api/suggest.js`).
 
 ## Add a weekly guide
 
-1. `cp blog/_template.html blog/<slug>.html` and replace `TITLE_ES`, `TITLE_EN`, `DESCRIPTION`, `SLUG`, `YYYY-MM-DD`; remove the `noindex` robots meta; write 600+ original words in each language.
+1. `cp blog/_template.html blog/<slug>.html` and replace `TITLE_ES`, `TITLE_EN`, `DESCRIPTION`, `SLUG`, `YYYY-MM-DD`; remove the `noindex` robots meta; write 800+ original words in each language.
 2. Add a card at the top of `blog/index.html` (below the `POSTS` comment).
 3. Add the URL with `<lastmod>` to `sitemap.xml`.
 4. Optionally link it from the home "Guías / Guides" card. Open a PR; Vercel previews it.
+
+Ads: none yet. `consent.js` blocks analytics until accepted; load any ad script only inside `luluConsent.onGranted(...)`. Replace the placeholder in `ads.txt` with the real AdSense publisher ID after approval.
