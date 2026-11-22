@@ -42,17 +42,6 @@
   form textarea, form input { display:block; width:100%; margin:8px 0; padding:10px; font:inherit; border-radius:12px; border:2px solid var(--blue); background:var(--bg); color:var(--ink) }
   form button { border:0; cursor:pointer; font:inherit }
 </style>
-  <!-- Google Analytics 4: Lulu Kids (G-07LDV0LZEN); fallback to the same ID in code -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-07LDV0LZEN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { window.dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-07LDV0LZEN');
-  </script>
-  <!-- Vercel-native observability: Web Analytics + Speed Insights -->
-  <script src="/_vercel/insights/script.js" defer></script>
-  <script src="/_vercel/speed-insights/script.js" defer></script>
 </head>
 <body>
 <main>
@@ -95,8 +84,8 @@
 
 <h2 data-l="es">Guías para padres</h2><h2 data-l="en">Parent guides</h2>
 <div class="card">
-  <p data-l="es">Artículos útiles: <a href="/blog/juegos-educativos-por-edad.html">cómo elegir juegos educativos según la edad</a> y <a href="/blog/tiempo-de-pantalla-rutina.html">una rutina tranquila de tiempo de pantalla</a>. <a href="/blog/">Ver todas las guías</a>.</p>
-  <p data-l="en">Useful reads: <a href="/blog/juegos-educativos-por-edad.html">how to choose educational games by age</a> and <a href="/blog/tiempo-de-pantalla-rutina.html">a calm screen-time routine</a>. <a href="/blog/">See all guides</a>.</p>
+  <p data-l="es">15 guías originales sobre juegos educativos, pantallas, lectura, números, emociones y más: <a href="/blog/juegos-educativos-por-edad.html">cómo elegir juegos según la edad</a>, <a href="/blog/tiempo-de-pantalla-rutina.html">una rutina de pantalla tranquila</a> y <a href="/blog/apps-seguras-ninos-checklist.html">apps seguras para niños</a>. <a href="/blog/">Ver todas las guías</a>.</p>
+  <p data-l="en">15 original guides on educational games, screens, reading, numbers, feelings and more: <a href="/blog/juegos-educativos-por-edad.html">how to choose games by age</a>, <a href="/blog/tiempo-de-pantalla-rutina.html">a calm screen-time routine</a> and <a href="/blog/apps-seguras-ninos-checklist.html">safe apps for kids</a>. <a href="/blog/">See all guides</a>.</p>
 </div>
 
 <h2 data-l="es">Apoya a Lulu Kids ❤️</h2><h2 data-l="en">Support Lulu Kids ❤️</h2>
@@ -122,11 +111,11 @@
 
 <h2 id="privacy" data-l="es">Privacidad</h2><h2 id="privacy-en" data-l="en">Privacy</h2>
 <div class="card">
-  <p data-l="es">Lulu Kids no recopila datos personales. Todo se queda en tu dispositivo.</p>
-  <p data-l="en">Lulu Kids collects no personal data. Everything stays on your device.</p>
-  <p>Contact: <a href="https://t.me/nescool101" rel="noopener">Telegram</a> · <a href="https://www.linkedin.com/in/nfalvarezg" rel="noopener">LinkedIn</a></p>
+  <p data-l="es">La app Lulu Kids no recopila datos personales; todo se queda en tu dispositivo. Este sitio solo usa analítica si la aceptas. Lee la <a href="/privacy.html">política de privacidad</a>.</p>
+  <p data-l="en">The Lulu Kids app collects no personal data; everything stays on your device. This site only uses analytics if you accept. Read the <a href="/privacy.html">privacy policy</a>.</p>
+  <p>Contact: <a href="/contact.html">Contact page</a> · <a href="https://t.me/nescool101" rel="noopener">Telegram</a> · <a href="https://www.linkedin.com/in/nfalvarezg" rel="noopener">LinkedIn</a></p>
 </div>
-<footer style="margin-top:3rem;font-size:.9rem"><a href="/blog/"><span data-l="es">Guías</span><span data-l="en">Guides</span></a> · <a href="/privacy.html"><span data-l="es">Privacidad</span><span data-l="en">Privacy</span></a></footer>
+<footer><a href="/">Lulu Kids</a><a href="/blog/"><span data-l="es">Guías</span><span data-l="en">Guides</span></a><a href="/about.html"><span data-l="es">Acerca de</span><span data-l="en">About</span></a><a href="/contact.html"><span data-l="es">Contacto</span><span data-l="en">Contact</span></a><a href="/privacy.html"><span data-l="es">Privacidad</span><span data-l="en">Privacy</span></a><a href="/terms.html"><span data-l="es">Términos</span><span data-l="en">Terms</span></a><a href="/privacy.html#cookies" data-cookie-settings><span data-l="es">Ajustes de cookies</span><span data-l="en">Cookie settings</span></a></footer>
 </main>
 <script>
   function L(l){ document.documentElement.lang=l; try{localStorage.l=l}catch(e){} }
@@ -142,5 +131,6 @@
     } catch { sugmsg.textContent = es ? 'No se pudo enviar, intenta de nuevo.' : 'Could not send, please try again.'; }
   };
 </script>
+<script src="/consent.js" defer></script>
 </body>
 </html>
