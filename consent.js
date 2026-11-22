@@ -30,7 +30,7 @@
   function show(focus) {
     if (!box) {
       var st = document.createElement('style');
-      st.textContent = '#lc{position:fixed;left:12px;right:12px;bottom:12px;max-width:560px;margin:0 auto;padding:14px 18px;border-radius:16px;background:#fff;color:#2b2540;border:2px solid #2b2540;box-shadow:0 4px 24px #0004;font:15px/1.45 system-ui,sans-serif;z-index:9999}#lc p{margin:.2em 0}#lc a{color:inherit}#lc button{font:inherit;font-weight:700;margin:8px 8px 0 0;padding:8px 18px;border:2px solid #2b2540;border-radius:999px;background:#ffd1dc;color:#2b2540;cursor:pointer}#lc button+button{background:#bde7ff}@media(prefers-color-scheme:dark){#lc{background:#2a2545;color:#f4efff;border-color:#f4efff}#lc button{border-color:#f4efff}}';
+      st.textContent = '#lc{position:fixed;left:0;right:0;bottom:0;max-height:25vh;overflow:auto;padding:8px 12px;background:#fff;color:#2b2540;border-top:2px solid #2b2540;font:14px/1.35 system-ui,sans-serif;z-index:9999;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}#lc p{margin:0;flex:1 1 260px}#lc p#lc-t{display:none}#lc a{color:inherit;display:inline-block;padding:10px 0}#lc div{display:flex;gap:8px}#lc button{font:inherit;font-weight:700;min-height:44px;min-width:44px;padding:0 16px;border:2px solid #2b2540;border-radius:999px;background:#ffd1dc;color:#2b2540;cursor:pointer}#lc button+button{background:#bde7ff}@media(prefers-color-scheme:dark){#lc{background:#2a2545;color:#f4efff;border-color:#f4efff}#lc button{border-color:#f4efff}}';
       document.head.appendChild(st);
       box = document.createElement('div'); box.id = 'lc'; box.setAttribute('role', 'dialog'); box.setAttribute('aria-labelledby', 'lc-t');
       box.onclick = function (e) {
