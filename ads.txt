@@ -1,3 +1,2 @@
-# TODO(owner): after AdSense approval, replace XXXXXXXXXXXXXXXX with your publisher ID
-# (AdSense > Account > Settings > Account information), then remove the leading "# ".
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# Authorized sellers: Google AdSense publisher account (IAB ads.txt).
+google.com, pub-9105945511239200, DIRECT, f08c47fec0942fa0
