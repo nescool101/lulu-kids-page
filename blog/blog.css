@@ -14,3 +14,6 @@ a { color:inherit }
 footer { margin-top:3rem; padding-top:1rem; border-top:1px solid currentColor; font-size:.9rem }
 footer a { margin-right:12px }
 [data-l] { display:none } html[lang=es] [data-l=es], html[lang=en] [data-l=en] { display:revert }
+.langsw { font:inherit; border-radius:999px; padding:6px 14px; background:var(--yellow); color:#2b2540; text-decoration:none }
+.crumbs { font-size:.85rem; opacity:.75; margin:.8rem 0 0 }
+.faq h3 { font-size:1.05rem; margin:1.1em 0 .2em }

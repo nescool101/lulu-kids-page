@@ -2,5 +2,11 @@
   "name": "lulu-kids-page",
   "private": true,
   "type": "module",
-  "dependencies": { "nodemailer": "^6.9.16" }
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  },
+  "scripts": {
+    "gen": "node tools/build-en.mjs",
+    "test": "node tools/check.mjs"
+  }
 }
