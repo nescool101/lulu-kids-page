@@ -87,6 +87,7 @@ for (const p of pages()) {
   if (ts) h = h.replace(/<title>.*?<\/title>/, `<title>${ts} | Lulu Kids</title>`);
   if (p === 'index.html') h = h.replace(/<title>.*?<\/title>/, '<title>Lulu Kids – Juegos educativos para niños</title>');
   if (ds) h = h.replace(/(<meta name="description" content=")[^"]*/, `$1${esc(ds)}`);
+  h = h.replace('<meta name="twitter:card" content="summary">', '<meta name="twitter:card" content="summary_large_image">');
   const sw = /<button([^>]*)onclick="L\([^"]*"([^>]*)>(.*?)<\/button>/;
   h = h.replace(sw, `<a class="langsw" href="${href(p, 1)}" hreflang="en" lang="en">English</a>`)
     .replace('<script src="/blog/blog.js"></script>\n', '')
@@ -151,3 +152,29 @@ const lm = p => { const d = p === 'blog/index.html' ? dates.at(-1) : mod(p); ret
 const entry = (p, en) => `<url><loc>${url(p, en)}</loc>${lm(p)}<xhtml:link rel="alternate" hreflang="es" href="${url(p, 0)}"/><xhtml:link rel="alternate" hreflang="en" href="${url(p, 1)}"/><xhtml:link rel="alternate" hreflang="x-default" href="${url(p, 0)}"/></url>`;
 writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n` +
   [...pages().flatMap(p => [entry(p, 0), entry(p, 1)]), `<url><loc>${BASE}/privacy.html</loc></url>`].join('\n') + '\n</urlset>\n');
+
+const blogSlugs = Object.keys(TITLES);
+const llms = [
+  '# Lulu Kids — Juegos educativos tranquilos para niños (2 a 8+ años) / Calm Learning Games for Kids',
+  '',
+  '> App bilingüe (español e inglés) de juegos educativos, cuentos ilustrados y actividades sin internet para niños de 2 a 8+ años. Sin cuentas, sin recopilación de datos personales y disponible en Google Play.',
+  '',
+  `Sitio web: ${BASE}/ (Español) · ${BASE}/en/ (English)`,
+  'Google Play Store: https://play.google.com/store/apps/details?id=com.lulukids.app',
+  '',
+  '## Páginas principales / Main Pages',
+  `- [Inicio (ES)](${BASE}/) · [English Home](${BASE}/en/)`,
+  `- [Guías para padres (ES)](${BASE}/blog/) · [Parent Guides (EN)](${BASE}/en/blog/)`,
+  `- [Acerca de (ES)](${BASE}/about.html) · [About (EN)](${BASE}/en/about.html)`,
+  `- [Contacto (ES)](${BASE}/contact.html) · [Contact (EN)](${BASE}/en/contact.html)`,
+  `- [Términos de uso (ES)](${BASE}/terms.html) · [Terms of Use (EN)](${BASE}/en/terms.html)`,
+  `- [Política de privacidad (ES/EN)](${BASE}/privacy.html)`,
+  '',
+  `## Guías para padres en Español (${blogSlugs.length})`,
+  ...blogSlugs.map(s => `- [${TITLES[s][0]}](${BASE}/blog/${s}.html)`),
+  '',
+  `## Parent Guides in English (${blogSlugs.length})`,
+  ...blogSlugs.map(s => `- [${TITLES[s][1]}](${BASE}/en/blog/${s}.html): ${(DESCS[s] || [])[1] || (cards[s + '.html'] && cards[s + '.html'].desc) || ''}`),
+  ''
+].join('\n');
+writeFileSync('llms.txt', llms);
