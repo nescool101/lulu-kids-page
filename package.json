@@ -7,6 +7,7 @@
   },
   "scripts": {
     "gen": "node tools/build-en.mjs",
-    "test": "node tools/check.mjs"
+    "test": "node tools/check.mjs",
+    "indexnow": "node tools/indexnow.mjs"
   }
 }

@@ -1,0 +1,58 @@
+# Lulu Kids — Juegos educativos tranquilos para niños (2 a 8+ años) / Calm Learning Games for Kids
+
+> App bilingüe (español e inglés) de juegos educativos, cuentos ilustrados y actividades sin internet para niños de 2 a 8+ años. Sin cuentas, sin recopilación de datos personales y disponible en Google Play.
+
+Sitio web: https://lulu-kids-page.vercel.app/ (Español) · https://lulu-kids-page.vercel.app/en/ (English)
+Google Play Store: https://play.google.com/store/apps/details?id=com.lulukids.app
+
+## Páginas principales / Main Pages
+- [Inicio (ES)](https://lulu-kids-page.vercel.app/) · [English Home](https://lulu-kids-page.vercel.app/en/)
+- [Guías para padres (ES)](https://lulu-kids-page.vercel.app/blog/) · [Parent Guides (EN)](https://lulu-kids-page.vercel.app/en/blog/)
+- [Acerca de (ES)](https://lulu-kids-page.vercel.app/about.html) · [About (EN)](https://lulu-kids-page.vercel.app/en/about.html)
+- [Contacto (ES)](https://lulu-kids-page.vercel.app/contact.html) · [Contact (EN)](https://lulu-kids-page.vercel.app/en/contact.html)
+- [Términos de uso (ES)](https://lulu-kids-page.vercel.app/terms.html) · [Terms of Use (EN)](https://lulu-kids-page.vercel.app/en/terms.html)
+- [Política de privacidad (ES/EN)](https://lulu-kids-page.vercel.app/privacy.html)
+
+## Guías para padres en Español (20)
+- [Animales para niños: vocabulario y curiosidad](https://lulu-kids-page.vercel.app/blog/animales-vocabulario-curiosidad.html)
+- [Apps seguras para niños: lista para padres](https://lulu-kids-page.vercel.app/blog/apps-seguras-ninos-checklist.html)
+- [Aprender a perder: frustración en los juegos](https://lulu-kids-page.vercel.app/blog/aprender-a-perder-frustracion-juegos.html)
+- [Aprender las letras sin presión](https://lulu-kids-page.vercel.app/blog/aprender-letras-sin-presion.html)
+- [Cuentos sobre emociones para niños](https://lulu-kids-page.vercel.app/blog/cuentos-emociones-ninos.html)
+- [Dibujar y pintar: creatividad sin dirigir](https://lulu-kids-page.vercel.app/blog/dibujar-y-pintar-creatividad.html)
+- [Enseñar colores y formas sin flashcards](https://lulu-kids-page.vercel.app/blog/ensenar-colores-y-formas.html)
+- [Juegos de lógica para niños: patrones](https://lulu-kids-page.vercel.app/blog/juegos-de-logica-pensamiento.html)
+- [Juegos de memoria para niños](https://lulu-kids-page.vercel.app/blog/juegos-de-memoria-concentracion.html)
+- [Juegos educativos según la edad (2 a 8+)](https://lulu-kids-page.vercel.app/blog/juegos-educativos-por-edad.html)
+- [Juegos sin internet para viajes y esperas](https://lulu-kids-page.vercel.app/blog/jugar-sin-internet-viajes.html)
+- [Niños bilingües en español e inglés](https://lulu-kids-page.vercel.app/blog/ninos-bilingues-espanol-ingles.html)
+- [Juegos en familia sin pantallas](https://lulu-kids-page.vercel.app/blog/juegos-en-familia-sin-pantallas.html)
+- [Leer en voz alta a los niños](https://lulu-kids-page.vercel.app/blog/leer-en-voz-alta-ninos.html)
+- [Música y ritmo para niños](https://lulu-kids-page.vercel.app/blog/musica-ritmo-ninos-piano.html)
+- [Los "por qué" de los niños](https://lulu-kids-page.vercel.app/blog/preguntas-por-que-curiosidad-ninos.html)
+- [Rutina para dormir en niños pequeños](https://lulu-kids-page.vercel.app/blog/rutina-para-dormir-ninos.html)
+- [Primeros números: enseñar a contar jugando](https://lulu-kids-page.vercel.app/blog/primeros-numeros-contar-jugando.html)
+- [Rompecabezas para niños: beneficios y edades](https://lulu-kids-page.vercel.app/blog/rompecabezas-beneficios-ninos.html)
+- [Tiempo de pantalla en niños pequeños](https://lulu-kids-page.vercel.app/blog/tiempo-de-pantalla-rutina.html)
+
+## Parent Guides in English (20)
+- [Animals for kids: vocabulary and curiosity](https://lulu-kids-page.vercel.app/en/blog/animales-vocabulario-curiosidad.html): How to use children's natural interest in animals to widen vocabulary, observe, ask questions and learn to care for living things.
+- [Safe apps for kids: a parent checklist](https://lulu-kids-page.vercel.app/en/blog/apps-seguras-ninos-checklist.html): What to check before installing a kids' app: ads, permissions, purchases, external links, data and parental controls, with a practical checklist.
+- [Learning to lose: frustration in games](https://lulu-kids-page.vercel.app/en/blog/aprender-a-perder-frustracion-juegos.html): Why children find it hard to lose or make mistakes, how to respond in the moment and which habits help games become a safe place to fail.
+- [Learning letters without pressure](https://lulu-kids-page.vercel.app/en/blog/aprender-letras-sin-presion.html): How to support a child aged 2 to 7 in recognizing letters and sounds with games, stories and simple routines, without forcing reading.
+- [Stories about feelings for kids](https://lulu-kids-page.vercel.app/en/blog/cuentos-emociones-ninos.html): How to use stories to help kids aged 2 to 8 name their emotions, from anger to sadness, with simple questions and routines.
+- [Drawing and painting: nurture creativity](https://lulu-kids-page.vercel.app/en/blog/dibujar-y-pintar-creatividad.html): What to expect from children's drawing by age, which materials to offer and how to comment on a child's work without always saying "how pretty".
+- [Teach colors and shapes without flashcards](https://lulu-kids-page.vercel.app/en/blog/ensenar-colores-y-formas.html): Practical ideas for a 2 to 5 year old to learn colors and shapes by playing at home, at the park and on screen, with no pressure or boring drilling.
+- [Logic games for kids: patterns and sequences](https://lulu-kids-page.vercel.app/en/blog/juegos-de-logica-pensamiento.html): How to introduce logical thinking to kids aged 3 to 8 with patterns, sorting and sequences, at home and on screen, without making it boring.
+- [Memory games for kids](https://lulu-kids-page.vercel.app/en/blog/juegos-de-memoria-concentracion.html): Matching, observation and recall games for kids aged 3 to 8, with tips to avoid frustration and build concentration gradually.
+- [Educational games by age (2 to 8+)](https://lulu-kids-page.vercel.app/en/blog/juegos-educativos-por-edad.html): Parent guide: what to look for in an educational game at ages 2, 4, 6 and 8+, signs of a good game and when to change level.
+- [Offline play for trips and waiting rooms](https://lulu-kids-page.vercel.app/en/blog/jugar-sin-internet-viajes.html): Offline game ideas, with and without screens, for the car, plane and waiting rooms, and why it helps not to depend on internet.
+- [Bilingual kids in Spanish and English](https://lulu-kids-page.vercel.app/en/blog/ninos-bilingues-espanol-ingles.html): How to support a child learning Spanish and English together: one-person-one-language, routines, books and games, and what to do if they mix languages.
+- [Screen-free family games](https://lulu-kids-page.vercel.app/en/blog/juegos-en-familia-sin-pantallas.html): Simple screen-free games for family play with kids aged 2 to 8: no materials, household items and tabletop games, adapted to each age.
+- [Reading aloud to kids](https://lulu-kids-page.vercel.app/en/blog/leer-en-voz-alta-ninos.html): How to read aloud to kids aged 2 to 8: choosing books by age, asking questions that spark conversation and what to do when they will not sit still.
+- [Music and rhythm for kids](https://lulu-kids-page.vercel.app/en/blog/musica-ritmo-ninos-piano.html): Simple music ideas for kids aged 2 to 8: homemade instruments, rhythm and echo games, volume care and how to use a piano app without pressure.
+- [Kids' endless "why" questions](https://lulu-kids-page.vercel.app/en/blog/preguntas-por-que-curiosidad-ninos.html): What to do with the constant "why" questions of kids aged 2 to 8: short, true answers, what to say when you do not know and games to feed curiosity.
+- [A calm bedtime routine for kids](https://lulu-kids-page.vercel.app/en/blog/rutina-para-dormir-ninos.html): A five-step night routine for young kids: warnings, a story, a fixed goodbye, and what to do about screens, fears and days that go off plan.
+- [First numbers: teach counting through play](https://lulu-kids-page.vercel.app/en/blog/primeros-numeros-contar-jugando.html): How to go from reciting numbers to understanding quantities: everyday games, typical counting mistakes and tips by age for kids 2 to 7.
+- [Puzzles for kids: benefits and ages](https://lulu-kids-page.vercel.app/en/blog/rompecabezas-beneficios-ninos.html): What children learn from puzzles, how many pieces to choose by age and how to help without solving it for them.
+- [Screen time for young kids: a calm routine](https://lulu-kids-page.vercel.app/en/blog/tiempo-de-pantalla-rutina.html): A practical four-step routine for young kids' screen time, with general WHO guidance and tips for handling limits.
