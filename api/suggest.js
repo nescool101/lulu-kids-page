@@ -7,7 +7,9 @@ export default async function handler(req, res) {
   if (website) return res.status(204).end();
   const m = String(msg).trim(), f = String(from).trim();
   if (m.length < 5 || m.length > 2000 || f.length > 200) return res.status(400).end();
-  const { SMTP_USER, SMTP_PASS, SMTP_HOST = 'smtp.gmail.com', SUGGEST_TO = SMTP_USER } = process.env;
+  const SMTP_USER = process.env.SMTP_USER || process.env.GMAIL_USER_NESCAO;
+  const SMTP_PASS = process.env.SMTP_PASS || process.env.GMAIL_APP_PASSWORD_NESCAO;
+  const { SMTP_HOST = 'smtp.gmail.com', SUGGEST_TO = SMTP_USER } = process.env;
   const replyTo = /^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(f) ? f : undefined;
   try {
     await nodemailer

@@ -1,10 +1,9 @@
-// Consent banner (es/en). Analytics load only after "Accept". Choice kept in localStorage.
-// Ads: none yet. When AdSense is enabled, load its script ONLY inside luluConsent.onGranted(...).
+// Consent banner (es/en). Analytics and AdSense load only after "Accept". Choice kept in localStorage.
 (function () {
   var K = 'lulu-consent', cbs = [], loaded = false;
   var T = {
-    es: ['Cookies y privacidad', 'Usamos cookies de analítica (Google Analytics y Vercel) solo si lo aceptas. Más información en la <a href="/privacy.html#cookies">política de privacidad</a>.', 'Aceptar', 'Rechazar'],
-    en: ['Cookies and privacy', 'We use analytics cookies (Google Analytics and Vercel) only if you accept. More in the <a href="/privacy.html#cookies">privacy policy</a>.', 'Accept', 'Reject']
+    es: ['Cookies y privacidad', 'Usamos cookies de analítica y publicidad (Google Analytics, AdSense y Vercel) solo si lo aceptas. Más información en la <a href="/privacy.html#cookies">política de privacidad</a>.', 'Aceptar', 'Rechazar'],
+    en: ['Cookies and privacy', 'We use analytics and advertising cookies (Google Analytics, AdSense and Vercel) only if you accept. More in the <a href="/privacy.html#cookies">privacy policy</a>.', 'Accept', 'Reject']
   };
   function get() { try { return localStorage.getItem(K); } catch (e) { return null; } }
   function set(v) { try { localStorage.setItem(K, v); } catch (e) {} }
@@ -15,6 +14,7 @@
     window.gtag = function () { window.dataLayer.push(arguments); };
     gtag('js', new Date()); gtag('config', 'G-07LDV0LZEN');
     load('https://www.googletagmanager.com/gtag/js?id=G-07LDV0LZEN');
+    load('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9105945511239200', { async: true, crossOrigin: 'anonymous' });
     load('/_vercel/insights/script.js'); load('/_vercel/speed-insights/script.js');
     cbs.forEach(function (f) { f(); });
   }
