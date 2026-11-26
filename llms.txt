@@ -1,9 +1,9 @@
 # Lulu Kids — Juegos educativos tranquilos para niños (2 a 8+ años) / Calm Learning Games for Kids
 
-> App bilingüe (español e inglés) de juegos educativos, cuentos ilustrados y actividades sin internet para niños de 2 a 8+ años. Sin cuentas, sin recopilación de datos personales y disponible en Google Play.
+> App bilingüe (español e inglés) de juegos educativos, cuentos ilustrados y actividades sin internet para niños de 2 a 8+ años. Gratis con anuncios (se quitan con un código tras donar), sin cuentas ni compras, disponible en Google Play.
 
 Sitio web: https://lulu-kids-page.vercel.app/ (Español) · https://lulu-kids-page.vercel.app/en/ (English)
-Google Play Store: https://play.google.com/store/apps/details?id=com.lulukids.app
+Google Play Store: https://play.google.com/store/apps/details?id=app.lulukids.kids_app
 
 ## Páginas principales / Main Pages
 - [Inicio (ES)](https://lulu-kids-page.vercel.app/) · [English Home](https://lulu-kids-page.vercel.app/en/)

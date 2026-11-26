@@ -9,7 +9,7 @@ export const pages = () => ['index.html', 'about.html', 'contact.html', 'terms.h
 export const url = (p, en) => BASE + (en ? '/en' : '') + '/' + p.replace(/index\.html$/, '');
 const href = (p, en) => url(p, en).slice(BASE.length) || '/';
 const EN = { // en title/description for non-article pages (articles take theirs from blog/index.html cards)
-  'index.html': ['Lulu Kids – Calm learning games for kids', 'Calm learning games for kids 2 to 8+, in Spanish and English. Works offline, with no accounts and no personal data collected.'],
+  'index.html': ['Lulu Kids – Calm learning games for kids', 'Calm learning games for kids 2 to 8+, in Spanish and English. Free with ads, no accounts or purchases. Works offline.'],
   'about.html': ['About Lulu Kids', 'Who makes Lulu Kids, why it exists and how we prepare the parent guides and learning games for children aged 2 to 8+.'],
   'contact.html': ['Contact Lulu Kids', 'How to contact Lulu Kids: questions, suggestions, bug reports and privacy requests.'],
   'terms.html': ['Terms of Use', 'Terms of use for the Lulu Kids app and website.'],
@@ -41,7 +41,7 @@ const TITLES = {
 const DESCS = {
   'jugar-sin-internet-viajes': ['Ideas de juegos sin conexión, con y sin pantalla, para el coche, el avión y las salas de espera, y por qué conviene no depender de internet.', 'Offline game ideas, with and without screens, for the car, plane and waiting rooms, and why it helps not to depend on internet.'],
   'index': ['Guías para padres sobre juegos educativos, tiempo de pantalla, lectura, números y emociones para niños de 2 a 8 años.', null],
-  'home': ['Juegos educativos tranquilos para niños de 2 a 8+ años, en español e inglés. Funciona sin internet, sin cuentas y sin recopilar datos personales.', null],
+  'home': ['Juegos educativos tranquilos para niños de 2 a 8+ años, en español e inglés. Gratis con anuncios, sin cuentas ni compras. Funciona sin internet.', null],
 };
 const slugOf = p => p.replace(/^blog\//, '').replace(/\.html$/, '');
 // remove every <tag ... data-l="x"> ... </tag> block, depth-aware
@@ -157,10 +157,10 @@ const blogSlugs = Object.keys(TITLES);
 const llms = [
   '# Lulu Kids — Juegos educativos tranquilos para niños (2 a 8+ años) / Calm Learning Games for Kids',
   '',
-  '> App bilingüe (español e inglés) de juegos educativos, cuentos ilustrados y actividades sin internet para niños de 2 a 8+ años. Sin cuentas, sin recopilación de datos personales y disponible en Google Play.',
+  '> App bilingüe (español e inglés) de juegos educativos, cuentos ilustrados y actividades sin internet para niños de 2 a 8+ años. Gratis con anuncios (se quitan con un código tras donar), sin cuentas ni compras, disponible en Google Play.',
   '',
   `Sitio web: ${BASE}/ (Español) · ${BASE}/en/ (English)`,
-  'Google Play Store: https://play.google.com/store/apps/details?id=com.lulukids.app',
+  'Google Play Store: https://play.google.com/store/apps/details?id=app.lulukids.kids_app',
   '',
   '## Páginas principales / Main Pages',
   `- [Inicio (ES)](${BASE}/) · [English Home](${BASE}/en/)`,
