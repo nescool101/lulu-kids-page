@@ -9,4 +9,4 @@ Static site on Vercel (`index.html`, `privacy.html`, `blog/`, `api/suggest.js`).
 3. Add the URL with `<lastmod>` to `sitemap.xml`.
 4. Optionally link it from the home "Guías / Guides" card. Open a PR; Vercel previews it.
 
-Ads: none yet. `consent.js` blocks analytics until accepted; load any ad script only inside `luluConsent.onGranted(...)`. Replace the placeholder in `ads.txt` with the real AdSense publisher ID after approval.
+Site ads (AdSense) load only after consent (`consent.js`). Donor codes and Play declarations: `docs/donations-and-play.md`.

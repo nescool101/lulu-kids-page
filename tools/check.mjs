@@ -11,6 +11,8 @@ const resolve = h => { let f = h.split('#')[0].split('?')[0].replace(/^\//, '');
 for (const p of all) {
   const h = readFileSync(p, 'utf8'), en = p.startsWith('en/'), src = en ? p.slice(3) : p, art = /^blog\/(?!index)/.test(src);
   const g = re => (h.match(re) || [])[1];
+  if (/LULU-[A-Z0-9]{3,}-[A-Z0-9]{3,}/.test(h)) err(p, 'promo code on a public page');
+  if (/US\$ ?1\.99|full version|versión completa/i.test(h)) err(p, 'paid-version claim (app is free)');
   const title = g(/<title>(.*?)<\/title>/), desc = g(/<meta name="description" content="([^"]*)"/);
   if (!title || title.length > 60) err(p, `title ${title && title.length} chars (>60)`);
   if (!desc || desc.length > 160) err(p, `description ${desc && desc.length} chars (>160)`);
